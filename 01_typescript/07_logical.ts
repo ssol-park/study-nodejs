@@ -25,13 +25,13 @@ console.log({ not1, not2, not3, not4 }); // { not1: false, not2: true, not3: tru
 
 console.log('-------------------------------');
 
-interface Assignment {
+interface IAssignment {
   duration: number;
   title: string;
 }
 
 // (a ||= b)  === (a || (a = b)) --> a가 falsy한 값일 경우, b의 값을 a에 할당.
-const a: Assignment = { duration: 0, title: '' };
+const a: IAssignment = { duration: 0, title: '' };
 
 a.duration ||= 10;
 console.log(a.duration); // a.duration이 falsy한 값이면 10 출력
@@ -42,7 +42,7 @@ console.log(a.title); // a.title이 falsy한 값이면 Empty! 출력
 console.log('-------------------------------');
 
 // (a &&= b)  === (a && (a = b)) --> a가 truthy한 값일 경우, b의 값을 a에 할당.
-const b: Assignment = { duration: 10, title: '' };
+const b: IAssignment = { duration: 10, title: '' };
 
 b.duration &&= 1;
 console.log(b.duration); // duration이 falsy한 값이면 0출력
