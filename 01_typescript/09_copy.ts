@@ -41,8 +41,25 @@ console.log({
 console.log('--------------------------');
 
 // deep copy - 3. lodash
-const lodashCopied = _.cloneDeep(original);
-console.log(lodashCopied === original); // false
+
+interface IDimension {
+  option: {
+    a: string;
+  };
+}
+
+const dimension: IDimension = {
+  option: {
+    a: 'a',
+  },
+};
+
+const lodashCopied = _.cloneDeep(dimension);
+
+lodashCopied.option.a = 'bbb';
+
+console.log(lodashCopied === dimension); // false
+console.log(lodashCopied.option.a === dimension.option.a); // false
 
 // References
 // https://velog.io/@recordboy/JavaScript-%EC%96%95%EC%9D%80-%EB%B3%B5%EC%82%ACShallow-Copy%EC%99%80-%EA%B9%8A%EC%9D%80-%EB%B3%B5%EC%82%ACDeep-Copy
