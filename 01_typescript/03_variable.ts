@@ -1,4 +1,4 @@
-let a = 0;
+let a: number = 0;
 
 console.log(a); // 0
 
@@ -6,7 +6,7 @@ a = 10;
 
 console.log(a); // 10
 
-const b = 20;
+const b: number = 20;
 
 // b = 30; -- const는 상수이므로 Error
 

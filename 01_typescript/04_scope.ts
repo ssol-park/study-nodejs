@@ -24,7 +24,7 @@ console.log(b); // 30
 
 // 렉시컬스코프
 
-let x = 'global';
+let x: string = 'global';
 
 const foo = () => {
   let x = 'local';

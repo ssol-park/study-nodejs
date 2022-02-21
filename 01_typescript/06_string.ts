@@ -1,5 +1,5 @@
-const a = 'Hello';
-const b = 'NodeJS';
+const a: string = 'Hello';
+const b: string = 'NodeJS';
 
 console.log(a + ' ' + b); // Hello NodeJS
 console.log(`${a} ${b}`); // Hello NodeJS

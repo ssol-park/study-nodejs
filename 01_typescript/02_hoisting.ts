@@ -1,7 +1,7 @@
-let foo = 1;
+let foo: number = 1;
 {
   console.log(foo);
-  let foo = 2;
+  let foo: number = 2;
 }
 
 console.log(foo2);
