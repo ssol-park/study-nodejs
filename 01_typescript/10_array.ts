@@ -62,3 +62,7 @@ console.log('------------- join -------------');
 // join : 배열의 모든 요소를 하나의 문자열로 만든다.
 
 console.log(seasons.join(', ')); // spring, summer, fall, winter
+
+console.log('------------- concat -------------');
+
+console.log(months.concat(seasons)); // ['Jan', 'Feb', 'March', 'April', 'May', 'spring', 'summer', 'fall', 'winter'];
